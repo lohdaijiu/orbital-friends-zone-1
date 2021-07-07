@@ -42,8 +42,8 @@ function AddPost() {
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
       likes: 0,
-      comments: {},
-      alreadyLiked: {},
+      comments: [],
+      alreadyLiked: [],
       content: formValue2
     });
 
