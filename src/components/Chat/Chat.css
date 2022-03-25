@@ -1,0 +1,147 @@
+.Chat body {
+  background-color: red;
+}
+
+.Chat {
+  text-align: left;
+  max-width: 1920px;
+  margin: auto;
+  background-color: #cfe8fc;
+  padding-bottom: "30vh";
+  max-height: 80vh;
+}
+
+.Chat section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-height: 70vh;
+  max-height: auto;
+  background-color: white;
+  position: relative;
+}
+
+.Chat main {
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  margin: 0vh 0 0vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Chat main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.Chat main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.Chat main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.Chat form {
+  height: 7vh;
+  position: fixed;
+  bottom: 0;
+
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+}
+
+.Chat form button {
+  width: 5%;
+  background-color: rgb(113, 113, 185);
+  margin-right: auto;
+}
+
+.Chat input {
+  line-height: 1.5;
+  width: 50%;
+  font-size: 1rem;
+  background: rgb(247, 242, 242);
+  color: black;
+  outline: black;
+  border: black;
+  padding: 0 10px;
+  margin-left: auto;
+  border-radius: 25px;
+}
+
+.Chat button {
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+.Chat button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.Chat ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+.Chat p {
+  max-width: 40vw;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.Chat .message {
+  display: flex;
+  align-items: center;
+}
+
+.Chat .sent {
+  flex-direction: row-reverse;
+}
+
+.Chat .sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+  word-wrap: break-word;
+  text-align: right;
+}
+.Chat .received p {
+  background: #e5e5ea;
+  color: black;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.Chat .backButton {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+#displayedName {
+  color: black;
+  font-size: 0.75rem;
+}
